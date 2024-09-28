@@ -16,3 +16,4 @@ swww,
 yay,
 gnome-system-monitor,
 kitty,
+thunar
