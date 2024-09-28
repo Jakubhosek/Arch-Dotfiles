@@ -1,0 +1,50 @@
+[global]
+    # Notification geometry (width x height)
+    geometry = "300x80+0+20"  # +0 centers the notification, +20 from the top
+
+    # Padding around the text
+    padding = 12
+
+    # Border radius for rounded corners
+    corner_radius = 12
+
+    # Set the transparency for notifications (0-100, 0 is fully transparent)
+    transparency = 35  # Increase transparency for a more see-through effect
+
+    # Font settings (smaller size: 11)
+    font = JetBrainsMono 11
+
+    # Frame (border) width
+    frame_width = 4
+
+    # General background color (darker and more transparent)
+    background = "#101014"  # A very dark, nearly black color
+    foreground = "#FFFFFF"
+
+    # Progress bar (optional)
+    progress_bar = true
+    progress_bar_color = "#202230"  # Darker for contrast
+
+    # Notification separator line color
+    separator_color = "#33334A"  # Darker border color
+
+[urgency_low]
+    # Background for low-urgency notifications (darker)
+    background = "#202230"
+    foreground = "#9699b7"
+    timeout = 3
+    frame_color = "#33334A"
+
+[urgency_normal]
+    # Background for normal-urgency notifications (darker)
+    background = "#202230"
+    foreground = "#9699b7"
+    timeout = 5
+    frame_color = "#33334A"
+
+[urgency_critical]
+    # Background for critical-urgency notifications (darker)
+    background = "#202230"
+    foreground = "#d9e0ee"
+    timeout = 0
+    frame_color = "#33334A"
