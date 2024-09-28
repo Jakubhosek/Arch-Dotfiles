@@ -1,0 +1,133 @@
+/* Catppuccin Mocha */
+@import url("../colours.css");
+* {
+	font-family: "Fira Code";
+	font-weight: bold;
+	font-size: 10pt;
+	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+/* General Waybar window settings */
+window#waybar {
+  background: transparent;
+  color: @base19;
+}
+
+/* Tooltip Styling */
+tooltip {
+  background: rgba(50, 50, 60, 1);
+  border-radius: 10px;
+  border-color: rgba(30, 30, 40, 0.8);
+}
+
+/* Module Styling */
+.module {
+    padding: 0px 15px;
+    background: rgba(50, 50, 65, 0.7);
+    margin: 0px 5px;
+    border-radius: 12px;
+}
+.module:hover {
+    background: rgba(60, 60, 80, 0.9); /* Make background lighter on hover */
+    transition: background 0.2s ease;  /* Smooth transition effect */
+}
+
+/* Group Island Styling for Left, Center, Right */
+.modules-left,
+.modules-center,
+.modules-right {
+    background: rgba(40, 40, 55, 0.99);
+    padding: 8px 10px;
+    border-radius: 12px;
+    margin: 0px 10px;
+}
+
+/* Individual Module Colors */
+#battery { color: #D8A4D7; }
+#bluetooth { color: #ADD8E6; }
+#clock { color: #B19CD9; }
+#cpu { color: #F5A9C9; }
+#memory { color: #D8A4D7; }
+#network { color: #F5A9C9; }
+#temperature { color: #F5A9C9; }
+#tray { color: #ADD8E6; }
+#pulseaudio { color: #D8A4D7; }
+#disk { color: #F5A9C9; }
+#language { color: #D8A4D7; }
+#custom-suspend {
+  color: #F5A9C9;
+}
+
+#custom-shutdown {
+  color: #B19CD9;
+}
+#custom-lock {
+  color: #D8A4D7;
+}
+#custom-reboot {
+  color: #ADD8E6;
+}
+#custom-logout {
+  color: #C2CFE2;
+}
+/* Playerctl without bubble */
+#custom-playerctl {
+    color: #F5A9C9;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+#custom-arch {
+    color: rgba(200,200,255,1);
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+/* Additional tweaks for space and responsiveness */
+/* General settings */
+#workspaces {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding: 0px;
+}
+
+#workspaces button {
+  padding: 0px 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  font-size: 12px;
+}
+
+/* Active workspace: Light Blue Background */
+#workspaces button.active {
+  color: #F5A9C9;
+}
+
+/* Inactive workspace with windows open: Lavender Background */
+#workspaces button.urgent {
+  background-color: #d1c4e9; /* Lavender */
+  color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(209, 196, 233, 0.7);
+}
+
+/* Inactive workspace with no windows: Soft Pink Background */
+#workspaces button.inactive {
+  background-color: #f8bbd0; /* Pink */
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+/* Hover animation to make it interactive */
+#workspaces button:hover {
+  opacity: 1;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* Clicking a button */
+#workspaces button:active {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+

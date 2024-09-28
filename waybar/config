@@ -1,0 +1,33 @@
+{
+"include": "~/.config/waybar/modules",
+"layer": "top",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 0,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 3,
+"margin-left": 7,
+"margin-right": 7,
+
+"modules-left": [
+	"custom/arch",
+	"clock",
+	"battery",
+	"cpu",
+	"memory",
+	],
+
+"modules-center": [
+	"hyprland/workspaces#pacman",
+	], 
+
+"modules-right": [
+	"group/connections",
+	"group/audio",
+	"disk",
+	"hyprland/language",       
+	"group/power_drawer",
+	],
+}
