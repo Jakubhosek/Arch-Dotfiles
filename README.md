@@ -15,5 +15,6 @@ JetBrains Fonts and icons,
 swww,
 yay,
 gnome-system-monitor,
-kitty,
-thunar
+alacritty,
+thunar,
+Freakfox
