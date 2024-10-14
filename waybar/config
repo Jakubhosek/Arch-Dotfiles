@@ -12,15 +12,14 @@
 "margin-right": 7,
 
 "modules-left": [
-	"custom/arch",
 	"clock",
 	"battery",
 	"cpu",
-	"memory",
+	"group/nothing",
 	],
 
 "modules-center": [
-	"hyprland/workspaces#pacman",
+	"group/tux",
 	], 
 
 "modules-right": [
