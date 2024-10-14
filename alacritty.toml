@@ -1,0 +1,76 @@
+[window]
+padding = { x = 25, y = 25 }
+opacity = 0.85
+decorations = "none"
+
+[font]
+normal = { family = "FiraCode", style = "Bold" }
+size = 11.0
+
+[colors.primary]
+background = "#0A0E14"
+foreground = "#B3C5EF"
+
+[colors.normal]
+black = "#1E2A3E"
+red = "#FF6B6B"
+green = "#4EC9B0"
+yellow = "#E0AF68"
+blue = "#6E99B4"
+magenta = "#BB9AF7"
+cyan = "#7DCFFF"
+white = "#B3C5EF"
+
+[colors.bright]
+black = "#3B4252"
+red = "#FF8080"
+green = "#73D0B8"
+yellow = "#F0D197"
+blue = "#8AB4D0"
+magenta = "#C9A7FF"
+cyan = "#A3E0FF"
+white = "#D8E2FF"
+
+[cursor.style]
+shape = "Block"
+blinking = "On"
+
+[cursor]
+blink_interval = 750
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[shell]
+program = "/bin/zsh"
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "Insert"
+mods = "Shift"
+action = "PasteSelection"
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
+
+[[keyboard.bindings]]
+key = "Equals"
+mods = "Control"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Minus"
+mods = "Control"
+action = "DecreaseFontSize"
